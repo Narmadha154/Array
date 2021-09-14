@@ -70,6 +70,22 @@ public class Runner{
                 MinDistance dis= new MinDistance();
                 dis.findMinDis();
                 break;
+            case 17:
+                SubArr sub= new SubArr();
+                sub.subArr();
+                break;
+            case 18:
+                NonRepeat rep= new NonRepeat();
+                rep.findFirstNonRepeat();
+                break;
+            case 19:
+                MinElement min= new MinElement();
+                min.findMinEle();
+                break;
+            case 20:
+                KthSmallest smallEle= new KthSmallest();
+                smallEle.findKthSmallestElement();
+                break;
             default:
                 System.out.println("no program");
         }
