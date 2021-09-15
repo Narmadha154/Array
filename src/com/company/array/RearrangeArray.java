@@ -15,7 +15,7 @@ public class RearrangeArray {
         int [] negArr=new int[size];
         int k=0,l=0;
         for(int i=0;i<size;i++){
-            if(arr[i]>0){
+            if(arr[i]>=0){
                 posArr[k++]=arr[i];
             }
             else{
@@ -24,10 +24,16 @@ public class RearrangeArray {
         }
         int s=0,t=0;
         for(int i=0;i<size;i++){
-            if(i%2==0){
+            if(i%2==0&&s<k){
                 arr[i]=posArr[s++];
             }
-            else{
+            else if(i%2!=0&&t<l){
+                arr[i]=negArr[t++];
+            }
+            else if(t>=l&&s<k){
+                arr[i]=posArr[s++];
+            }
+            else if(s>=k&&t<l){
                 arr[i]=negArr[t++];
             }
         }
