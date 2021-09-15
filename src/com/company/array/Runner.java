@@ -70,6 +70,10 @@ public class Runner{
                 MinDistance dis= new MinDistance();
                 dis.findMinDis();
                 break;
+            case 16:
+                RearrangeArray arrange= new RearrangeArray();
+                arrange.rearrangeArr();
+                break;
             case 17:
                 SubArr sub= new SubArr();
                 sub.subArr();
