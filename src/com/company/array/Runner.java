@@ -90,6 +90,50 @@ public class Runner{
                 KthSmallest smallEle= new KthSmallest();
                 smallEle.findKthSmallestElement();
                 break;
+            case 21:
+                CelebrityProblem cele =new CelebrityProblem();
+                int res= cele.celebrity();
+                System.out.println(res);
+                break;
+            case 22:
+                RemoveDup rem= new RemoveDup();
+                rem.remDup();
+                break;
+            case 23:
+                KadanesAlgorithm algo= new KadanesAlgorithm();
+                algo.maxSubArraySum();
+                break;
+            case 24:
+                ExtraElementIndex ind= new ExtraElementIndex();
+                int indexOfEle=ind.findIndexOfExtraElement();
+                System.out.println(indexOfEle);
+                break;
+            case 25:
+                RunLengthEncoding encode= new RunLengthEncoding();
+                encode.encode();
+                break;
+            case 26:
+                UnionArray union= new UnionArray();
+                union.findUnionArrLength();
+                break;
+            case 27:
+                KeyPair key= new KeyPair();
+                boolean val=key.findKeyPair();
+                System.out.println(val);
+                break;
+            case 29:
+                PeakElement peak= new PeakElement();
+                int value=peak.findPeakEle();
+                System.out.println(value);
+                break;
+            case 30:
+                JumpGame jump= new JumpGame();
+                jump.findSteps();
+                break;
+            case 31:
+                PascalsTriangle tri= new PascalsTriangle();
+                tri.triangle();
+                break;
             default:
                 System.out.println("no program");
         }
