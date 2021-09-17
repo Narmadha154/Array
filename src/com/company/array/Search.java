@@ -20,10 +20,8 @@ public class Search {
             if(arr[i]==target){
                 return i;
             }
-            else if(target<max&&target>min){
-                if (target > arr[i] && target < arr[i + 1]) {
+            else if (target > arr[i] && target < arr[i + 1]) {
                     return i + 1;
-                }
             }
             else if(target>max){
                 return size;
