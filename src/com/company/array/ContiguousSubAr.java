@@ -3,7 +3,7 @@ package com.company.array;
 import java.util.Scanner;
 
 public class ContiguousSubAr {
-    public static void findSum() {
+    public static int [] findSum() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size:");
         int size = sc.nextInt();
@@ -14,22 +14,19 @@ public class ContiguousSubAr {
         }
         System.out.println("Enter the sum:");
         int sum = sc.nextInt();
-        int k=0,l=0,position=0;
+        int k=0;
+        int [] newArr=new int[2];
         for(int i=0;i<size;i++){
             long subArrSum=0;
-           for(int j=i;j<size;j++) {
-               subArrSum += arr[j];
-               if (subArrSum == sum) {
-                   k=i;
-                   l=j;
-               }
-               if((l-k)>position||(k-l)>position){
-                   position=l-k;
-                   k=i;
-                   l=j;
-               }
-           }
+            for(int j=i;j<size;j++) {
+                subArrSum += arr[j];
+                if (subArrSum == sum) {
+                   newArr[k++]=i+1;
+                   newArr[k++]=j+1;
+                   return newArr;
+                }
+            }
         }
-        System.out.println(k+" "+l);
+        return newArr;
     }
 }
