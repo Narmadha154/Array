@@ -134,6 +134,35 @@ public class Runner{
                 PascalsTriangle tri= new PascalsTriangle();
                 tri.triangle();
                 break;
+            case 32:
+                Search position= new Search();
+                int pos=position.searchInsertPosition();
+                System.out.println(pos);
+                break;
+            case 35:
+                KthSmallNthLarge smala= new KthSmallNthLarge();
+                smala.findSmallLarge();
+                break;
+            case 36:
+                Increment inc= new Increment();
+                inc.incrementArr();
+                break;
+            case 37:
+                SingleOne single= new SingleOne();
+                single.findSingleOne();
+                break;
+            case 38:
+                SevenUp up= new SevenUp();
+                up.findDivisible();
+                break;
+            case 39:
+                LocalMinima minima= new LocalMinima();
+                minima.findLocalMinima();
+                break;
+            case 40:
+                ContiguousSubAr subArr= new ContiguousSubAr();
+                subArr.findSum();
+                break;
             default:
                 System.out.println("no program");
         }
