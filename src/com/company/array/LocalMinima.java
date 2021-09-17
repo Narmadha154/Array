@@ -14,17 +14,17 @@ public class LocalMinima {
         }
         for(int i=0;i<size;i++){
             if(i==0){
-                if(arr[i]<arr[i+1]){
+                if(arr[i]<=arr[i+1]){
                     System.out.println(arr[i]);
                 }
             }
             else if(i==size-1){
-                if(arr[i]<arr[i-1]){
+                if(arr[i]<=arr[i-1]){
                     System.out.println(arr[i]);
                 }
             }
             else{
-                if(arr[i]<arr[i-1]&&arr[i]<arr[i+1]){
+                if(arr[i]<=arr[i-1]&&arr[i]<=arr[i+1]){
                     System.out.println(arr[i]);
                 }
             }
