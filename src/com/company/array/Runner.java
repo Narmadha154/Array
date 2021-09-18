@@ -139,6 +139,14 @@ public class Runner{
                 int pos=position.searchInsertPosition();
                 System.out.println(pos);
                 break;
+            case 33:
+                SlidingWindow slide= new SlidingWindow();
+                slide.window();
+                break;
+            case 34:
+                DistinctDigit digit= new DistinctDigit();
+                digit.findDistinctDigit();
+                break;
             case 35:
                 KthSmallNthLarge smala= new KthSmallNthLarge();
                 smala.findSmallLarge();
