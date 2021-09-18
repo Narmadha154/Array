@@ -13,14 +13,17 @@ public class SingleOne {
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
-        int count=0;
+        Arrays.sort(arr);
         for(int i=0;i<size;i++) {
-            for (int j = i + 1; j < size; j++) {
-                if (arr[i] == arr[j]) {
-                    count++;
-                }
-            }
-            if(count==0){
+            int count=0;
+           if(i<size-1&&arr[i]==arr[i+1]){
+               count++;
+               i++;
+           }
+           else if(i==size-1&&count==0){
+               System.out.println(arr[i]);
+           }
+           if (i<size-1&&count == 0) {
                 System.out.println(arr[i]);
             }
         }
